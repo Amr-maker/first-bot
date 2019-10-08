@@ -20,6 +20,18 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
+bot.on('ready', () => {
+    bot​.​user​.​setStatus​(​'available'​)
+    bot.user.setPresence({
+        game: {
+            name: 'type -help ( by Amr )',
+		
+            type: "STREAMING",
+            url: "https://www.twitch.tv/monstercat"
+        }
+    });
+});
+
 const prefix = "-";
 /////////////////////////
 ////////////////////////
